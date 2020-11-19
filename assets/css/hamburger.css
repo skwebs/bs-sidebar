@@ -1,9 +1,10 @@
 :root {
-	--hamburger-color: #888;
+	--hamburger-color: #777;
+	--hamburger-act-color: #777;
 }
 
 .hamburger {
-	padding: 10px;
+	padding:6.5px 10px;
 	display: inline-block;
 	cursor: pointer;
 	-webkit-transition-property: opacity, -webkit-filter;
@@ -22,16 +23,22 @@
 	margin: 0;
 	overflow: visible;
 }
-/*.hamburger:hover {
-    opacity: 0.7; 
+/*.hamburger:hover{
+    /*opacity: 0.7; *
+    background-color:var(--bs-primary);
     }
     .hamburger.is-active:hover {
     opacity: 0.7; 
     }*/
-.hamburger.is-active .hamburger-inner,
+/*.hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
 	background-color: var(--hamburger-color);
+}*/
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: var(--bs-secondary);
 }
 
 .hamburger-box {

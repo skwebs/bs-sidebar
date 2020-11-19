@@ -26,7 +26,8 @@
 	}
 	*/
 	
-	header,main,footer {
+	header:not('.nav-scroller')
+	,header,main,footer {
 	overflow-x:hidden;
 	overflow-y:auto;
 	/*flex: flex-grow, flex-shrink, flex-basic;*/
@@ -58,9 +59,4 @@
 	}
 	.copyright{
 	background:rgba(0,0,0,0.1);}
-	
-	.box .card{
-	width:100%;
-	max-width:600px;
-	}
 	
